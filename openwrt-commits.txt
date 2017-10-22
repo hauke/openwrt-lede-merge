@@ -1,0 +1,757 @@
+a5cdb65606 hostapd: bump PKG_VERSION
+78266a96f2 mac80211: backport kernel fix for CVE-2017-13080
+bf20ba5270 wireguard: simple version bump
+d905adef83 wireguard: add wireguard to base packages
+1576a0b777 hostapd: fix WPA packet number reuse with replayed messages and key reinstallation
+053afb8064 dnsmasq: bump to v2.78
+48caaaa784 tcpdump: upgrade to 4.9.2
+c897599729 tcpdump: fix tcpdump-mini build on glibc 2.25
+106ce7ccb7 tcpdump: Update to 4.9.1
+c4e5142567 tcpdump: update to version 4.9.0
+3c8f396c35 tcpdump: reduce size of -mini by removing more infrequently used protocols
+49679484ee tcpdump: update to 4.8.1
+b4480bf796 dropbear: bump to 2017.75
+46d82e4930 dropbear: enable SHA256 HMACs
+ced9fad6a2 dropbear: hide dropbear version
+ed8b30c97f dnsmasq: forward.c: fix CVE-2017-13704
+5d12b179cc dnsmasq: bump to 2.77
+6b23479711 dnsmasq: bump to 2.77rc5
+ad5f53cdea dnsmasq: make NO_ID optional in full variant
+13c5124e8b dnsmasq: Don't expose *.bind data incl version
+fc0f71e077 dnsmasq: bump to 2.77rc3
+7496bbc4f0 dnsmasq: bump to 2.77test5
+e81fc73fa0 dnsmasq: bump to dnsmasq v2.77test4
+f1aca726f2 dnsmasq: bump to dnsmasq v2.77test3 New test release (since test1) includes 2 LEDE patches that are upstream and may be dropped, along with many spelling fixes.
+2b616837b1 dnsmasq: update to dnsmasq 2.77test1
+10a8b769ea scripts/download.pl: Use CDN for kernel downloads
+aef6a4154e ca-certificates: bump to 20161130+nmu1
+c15bd8d6ee samba: fix CVE-2017-7494
+9fb1348a0a packages: lzo: Update LZO Makefile to repair dead Main URL
+df384cfeb6 ar71xx: add support for TP-Link 1043ND v4
+d87bf96698 firmware-utils: add support for TL-WR1043NDv4 to mktplinkfw/tplink-safeloader
+c52dd0b955 ccache, samba36: fix samba.org addresses to use https
+95f55ebf25 tools: do not apply ccache dependency to xz
+728e3a8700 tools: xz: force building without ccache
+2a726740a3 ccache: disable assembler support, it breaks kernel initramfs images
+c3b0878ae9 tools/ccache: Update ccache 3.3.2 and refresh patch
+5bf7769429 libnl-tiny: remove include/linux overrides to fix various build issues
+4df0f11a8f ramips: default profile for rt288x images
+3576b07567 ramips: add ip17xx support to WLI-TX4-AG300N
+191e4a7607 ramips: fix WLI-TX4-AG300N boot and network
+908266d621 kmod-sched-core: Add HTB and TBF traffic shapers
+6ec32832d2 uhttpd: enable certificate creation with OpenSSL
+590aff31b2 iproute2: Add support for cake qdisc
+d6a9aa160e kmod-sched-cake: Add CAKE AQM/Shaper
+8117cd03c0 xtables-addons: bump to 2.12
+0aedb52af9 gpio-ich/itco-wdt/w83627hf-wdt: add modules for Xeon platforms
+97ff3a3fb8 hwmon-coretemp: add thermal monitor for Core/Core2/Atom
+315a7bb657 hwmon-nct6775: add thermal monitor for nct6775/6776, et al
+b4cb3951f2 kmod-mdio: fix extra closing paren in AUTOLOAD definition
+12dfe0506e include/package.mk: sync default value for hash fallback with mirror hash
+41bc960acf build: add defaults for PKG_SOURCE, PKG_SOURCE_SUBDIR, PKG_VERSION
+5870851163 build: remove duplicate Download/default definition from include/host-build.mk
+00cf92d561 build: replace MD5SUM variables with HASH
+4f997727ae lantiq: td-w8980: fix failsafe mode via ethernet. fix failsafe-mode access for TD-W8980 via ethernet.
+04b46e6eb9 ramips: fix PSG1218 LEDs
+97d79eac84 ramips: Add support for Phicomm K2 PSG1218
+6a60f8a58e musl: bump to 1.1.16
+3c34aded57 firewall: bump to 2016-11-29
+43b662f2be ixgbe: fix missing symbol CONFIG_IXGBE_VXLAN when building
+aac4a5b6e9 ar71xx: add support for Anonabox Pro
+84a53c61ed lantiq: Fix for wbmr300 network settings
+0e560cad0a ixgbe: kmod packaging for Intel 10G ethernet ixgbe driver
+39871a3668 sunxi: Added profile for HAOYU Electronics Marsboard A10
+f5c2acdaef docs: Fix few typos
+44ba528afc tools/expat: Upgrade expat to 2.2.0 (support aarch64)
+52b0b6ea7a sunxi: uboot-sunxi: update to 2016.11
+0abc3fa5a9 Mvebu: update armada-385-linksys-rango.dts
+37c487ed70 ar71xx: Package set optimized for the DomyWifi DW33D
+0b394dd2f5 netifd: bump to 2016-12-09
+6c2ca35fdf modules: Add kmod-igbvf kernel module for Intel(R) 82576 Virtual Function Ethernet adapters
+4e4786139f opkg: sync with current patchlevel at lede-project
+659257b375 netifd: Request DHCP option 121 (classless route) by default
+bca0ff8241 ca-certificates: update to version 20161130
+2dcdb55d05 x86_64: Add kmod-igb as a default package
+2139791dc5 libubox: update to the latest version
+4492f32c79 ar71xx: Added missing support for Linksys E2100L
+9e2f8fa1e5 uboot-sunxi: fix default config for OLIMEX A13 SOM (FS#239)
+d7af3897ac packages: kmod-ipsec: Add kmod-crypto-echainiv as a dependency of kmod-ipsec.
+1a893cf563 iperf: used an updated renamed tarball instead of main upstream URL
+4999685ea2 iperf: add -lm to fix build with newer glibc
+2cfc46efea iperf: drop PKG_BUILD_DIR override
+153e1e9abf kernel: spidev-test: moved to tools/ in Linux 4.5
+f419bd8895 conntrack-tools: bump to 1.4.4
+6b5ee07a48 libnetfilter-conntrack: bump to 1.0.6
+46e8df5ea7 arptables: bump to 2015-05-20
+dab6431239 ca-certificates: bump to 20161102
+69a8f8c0fc nettle: update to 3.3 and enable fat build
+8d8f164d45 nftables: version bump to 0.6
+2e7989d294 libnftnl: version bump to 1.0.6
+dc5d9e714a iptables: kernel: drop custom extension xt_id
+fc04815ddc firewall: bump to 2016-11-06
+f50b355db7 squashfs4: use upstream xz compression header format
+f8909d81c4 openssl: fix cryptodev config dependency
+f82167bc4d ar71xx: reduce cpuload and flickering on devices using rsslieds
+fc1cd99cfe kernel: remove ocf support, cryptodev-linux should be used instead
+2f80e9df81 openssl: replace ocf-crypto-headers with a header file from cryptodev-linux
+10afd6a45f e2fsprogs: Fix setting of host compiler
+23e46f1c2a kernel: kmod-crypto-iv dropped in Linux 4.8
+8ad3f44dce kernel: remove echainiv.ko from kmod-crypto-iv
+6247555ee2 include/host-build.mk: use STAGING_DIR_HOSTPKG
+390e156a85 rules.mk: add STAGING_DIR_HOSTPKG variable
+55d5f26bcd musl: fix quoted time zone name handling
+7862d74a17 generic/4.4: add fix for CVE-2016-5195
+1cb9409df2 generic/4.1: bump kernel to 4.1.35
+f14d3f5d46 generic/3.18: bump kernel to 3.18.44
+5e150bb249 lantiq: danube fxs bugfix: changed compatible attribute of vmmc
+7c21870f85 ar71xx: Add support to DomyWifi DW33D
+ce116bc6f9 mvebu: bugfixes for rango
+67d3ba0c7c mwlwifi: install the 88W8964 firmware, too
+c718b120e0 kernel: add tpm support
+50e627ac06 mvebu: add support for the Linksys WRT3200ACM (Rango)
+2055b43f78 mwlwifi: upgrade to 10.3.2.0-20161013
+f9fc9c242f hostapd: add interoperability workaround for 80+80 and 160 MHz channels
+a709937307 Revert "kernel: bump 4.1 to 4.1.30"
+4acd4da998 Revert "kernel: bump 3.18 to 3.18.39"
+9c840109de ar71xx: disable flow control to the built-in switch on AR934x
+6184baa842 ar71xx: disable pdata->use_flow_control for QCA9558
+57c614a45b ar71xx: rename ethernet pdata->builtin_switch to use_flow_control
+5a779cdbb3 ar71xx: enable flow control for ethernet MACs with built-in switch
+f16bdf493f Revert "ar71xx: enable flow control for ethernet MACs with built-in switch"
+c735d4e3ca omcproxy: update to git HEAD
+f9794d4da0 odhcpd: update to git HEAD
+ecadb4217f odhcp6c: update to git HEAD
+c2d29a51e5 netfilter,iptables: add optional CHECKSUM module
+8bd198f171 include/package-ipkg.mk: use TARGET_PATH_PKG in Package/*/install steps
+8c658e15cc include/host-build.mk: set Host/Exports for Host/Install step
+69ae4b5e66 include/host-build.mk: fix ACLOCAL_INCLUDE
+7d7858f6f1 include/host-build.mk: pass HOST_BUILD_PREFIX to Host/install
+6eb5baaa47 gemini: rename config-default to config-4.4
+ca447f00dc gemini: rename patches directory to patches-4.4
+dbd3e81d69 gemini: delete 3.18 support
+4c70e54c07 gemini: drop Linux 4.1 support
+d41ac5fd97 image.mk: use LINUX_KARCH rather than ARCH for mkits
+823f6dd12f brcm63xx: fix CT-536p/CT-5621T support
+5d91613a4e brcm63xx: fix HG556a C button
+62e4b4f622 brcm63xx: fix image generation with offsets/blocksizes != 64K
+ab45e1aa2a brcm63xx: fix CVG834G compatible string
+2933b2f122 openssl: update to 1.0.2j
+6faa54673d strace: bump to 4.13
+ce94d58d8e perf: disable libcrypto dependency
+3f36cfced2 perf: drop sched_getcpu wrapper
+7f5b1dbcd6 xtables-addons: add missing dependency
+bd1c3202a0 xtables-addons: update to 2.11
+8c0660aa00 ncurses: install a dummy libtinfo.a for packages that try to link it
+c1858411e0 musl: update musl to version 1.1.15
+428ee42cba musl: remove sh3 workaround
+b793e4fe16 Enable nand for mt7621
+83767cf94f kernel: bump 3.18 to 3.18.39
+b64bf61d96 ipq806x: squash dts makefile patches into one
+5d9c3170ca ipq806x: fix r7800 dts name in image makefile
+81feceaa26 gemini: add 4.4 support
+31fa21bcdc ipq806x: forgotten r7800 dts rename in patch
+6320398fe1 ipq806x: Build image for Netgear Nighthawk X4 7500v2
+231ef70f45 kernel: bump 4.1 to 4.1.30
+0cd3fc8f47 kernel: add kmod-squashfs
+470ebc51b8 libubox: update to the latest version, adds a few utility functions
+dd9c4ab471 ath10k-firmware: fix QCA9984 board file loading
+5eb2bdd175 mac80211: add QCA9984 related patches and fixes
+5a17ceb0ab ipq806x: fix ipq8065 s2a/s2b regulator frequency (fixes ethernet performance)
+6838692737 ipq806x: Netgear R7800 is ipq8065, rename dts
+d6c4db5f9b u-boot-envtools: fix building with glibc
+c730772eb9 libs/gmp: update to 6.1.1
+321c35eaa3 tools/gmp: update to 6.1.1
+831006d0b6 tools/scons: update to 2.5.0
+b5b36bb86e tools/cmake: update to 3.6.1
+39386db0f4 dropbear: security update to 2016.74
+427c57cc60 procd: update to the latest version
+eeb010f910 fstools: update to latest HEAD
+4021764eff fstools: update to latest git HEAD
+e2db7aa009 fstools: update to latest git version
+5d61a55d62 fstools: update to latest git HEAD
+b07ea5a19d ugps: update to latest git HEAD
+fcda99f044 iperf3: update to version 3.1.3
+11c03bbef1 iperf: update to version 2.0.9
+a4d62c261c cyassl: update to wolfssl version 3.9.6
+2cb4884183 curl: update to version 7.50.0
+c2eff9bbe3 network/services/uhttpd: Add Basic Auth config
+d175c09bea mwlwifi: upgrade to 10.3.0.18-20160804
+55ac1fa751 brcm2708: Reverting git commit a194e83f16b05240184f58b709152fb840cf00f7
+84cdf81fd4 zynq: add xilinx devcfg char driver support
+2251e0a163 zynq: add usb support for Zedboard
+cd91ba788b generic/4.4: backport virtio_ring patch for reverting weak barriers patch
+2be862b6fc bcm53xx: fix simplified image building code
+019be77f6b sunxi: add support for Orange Pi 2 (H3)
+e2684a47b5 packages: uboot-sunxi: add support for Orange Pi 2
+0881b27ea0 ubox: update to the latest version, fixes lsmod output
+c3dca81f1e ubox: update to latest git HEAD
+71685f8fe2 ubox: update to latest git HEAD
+57a898bcfa Increase the default system log buffer size from 16 kB (default both in logd source and in the startup script) to 64 kB by adjusting the default value in startup script.
+0221021329 bcm53xx: image: don't suppress "mv" command echoing
+7b8ae82273 bcm53xx: simplify image building code
+2b2849c765 bcm53xx: remove duplicate template data from the image makefile
+934a1d6b67 bcm53xx: fix kernel config after USB2 PHY driver backport
+a20937630c bcm53xx: use upstream fix simplifying USB power GPIO usage
+46ef205da0 bcm53xx: backport driver for Northstar's USB 2.0 PHY
+a734975474 bcm53xx: backport BCM5301x patches from 2016-07-06
+663d304336 bcm53xx: calculate Seama MD5 using content of kernel partition
+246eb4a081 Revert "bcm53xx: use uncompressed zImages"
+9afe0c1ec5 netifd: update to the latest version
+ea3d5f4d86 netifd: quote vendorid and hostname variables in dhcp script
+5d4d8dd2b6 netifd: Remove hardcoded DHCP release option
+0d4e2cc83f strace: update to version 1.12
+28da8b7040 toolchain/binutils: add 2.26.1
+a30f33a7d4 tools/isl: bump to 0.17.1
+f14d34e473 mbedtls: fix missing mbedtls_time_t bug in mbedtls 2.3.0
+4d1eac91fb mbedtls: update to version 2.3.0
+4441c126df polarssl: update to version 1.3.17
+b33863337a tools: padjffs2: add option to output padding data to stdout
+2244efe230 linux/archs38: Add wireless AP capabilities similarly to axs101
+6f5e1cc051 linux/archs38: Disable USB 2.0
+fadd93e262 iftop: fix mac address display
+9f29d3e5af igmpproxy: logging options - make work & improve
+1fd7e5d65e mwlwifi: Update to latest version
+9a68b385f2 mwlwifi: remove the a-mpdu failure messages entirely instead of hiding them in the debug log
+bf389e7b99 mwlwifi: fix excessive logspam if starting a BA session fails
+957808eb4f mwlwifi: fix excessive use of busy-waiting that was tripping up the flash driver
+4fbcf30db6 mwlwifi: update to 10.3.0.17-20160520-1
+38813174b2 valgrind: update to the latest version, fix build issues on ARM
+6567a9614b prism54-firmware: change prism54/p54-firmware package versioning
+677e743ac2 prism54-firmware: add also other p54 firmware to own package
+e9799ea22d firmware: extract prism54-firmware into own package
+c95a6218b0 packages: uboot-lantiq: refresh patches to account for easybox904
+138f0748e9 packages: uboot-zynq: use dtc in kernel
+993f11c498 brcm2708: fix SUBTARGET checks for bcm2709/bcm2710
+2268ee8e1f zynq: add sdcard image generation support when board profile is selected
+4d133a7c63 tools: build dosfstools and mtools for zynq
+951b300fcd packages: uboot-zynq: bump uboot-zynq to 2016.07
+53d8dd8099 e2fsprogs: fix build on OS X systems
+e8c405b204 kernel: bump 4.1 to 4.1.27
+858fc3b24b packages: usign: update datecode to indicate correct year
+c2ca1d9bcf ustream-ssl: update to latest git HEAD
+0724fee052 ubus: update to latest git HEAD
+cc48d5b372 rpcd: update to latest git HEAD
+ec14b77499 procd: update to latest git HEAD
+e9ffbba58e jsonfilter: update to latest git HEAD
+772126288c uci: update to latest git HEAD
+76494dc9d0 usign: update to latest git HEAD
+a6fa07637b umbim: update to latest git HEAD
+74264ec488 libubox: update to latest git HEAD
+76cbb843d4 mac80211: brcmfmac: fix interfaces management
+b2b38957e6 mac80211: refresh brcmfmac patches
+531be44616 mac80211: brcmfmac: backport changes from 2016-06-29
+64d9b874bc mac80211: brcmfmac: rename patches from commit fixing P2P
+0b29dabf24 mac80211: brcmfmac: fix lockup related to P2P interface
+feb932e95b packages: fix nvram makefile
+9f5894383a kernel: bump 3.18 for the remaining targets to 3.18.36
+7ad58fce97 kernel: add missing symbol for 4.4
+3b683f504f arm64: update to linux 4.4
+203a7ed314 libubox: update to the latest version
+2c3b84e7d2 kernel: define CONFIG_CPU_THERMAL in kmod-thermal
+8d578a2286 nvram: install init.d quirks script on brcm47xx only
+95f18e501a kernel: remove bogus CONFIG_LOG_BUF_SHIFT overrides
+9edac5e786 conntrack: enable support for netfilter conntrack zones
+7ead4f423b kernel: fix dependency chain of kmod-igb
+1959e15ac0 busybox: run sysntpd at higher priority
+7e5059d41d libiconv-full: add license tag
+402c737c34 px5g: add license tag
+6a2f68d8c5 usbutils: add license tag
+24986a1cf8 elfutils: remove unrecognized config option
+59087725fb libpcap: remove unrecognized configure options
+8852da8090 util-linux: fix scanf fallback detection for uClibc-ng
+e6286ceebc ustream-ssl: update to the latest version, adds cyassl/wolfssl fixes
+facc1e8bd0 wolfssl: enable openssl 1.0.1 compatibility
+7e6ca2d317 libunwind: initial version 1.1
+f51dd01ca6 scripts: feeds: fix version detection for Make >= 4.2.1
+a935e22d06 tools/cmake: fix parallel build with Make 4.2+
+347143af0d build: don't add -j for parallel builds with Make 4.2+
+d960c74401 tools: patch-image: Added optional size option
+50c4176f73 ebtables: fix segmentation fault due to uninitialized extension data
+f9880b4863 kernel: remove full cache flush in fuse_copy_do() for MIPS
+95748269d0 kernel: fix missing break in ubi auto-mounting patch
+f65e79e4b7 kernel: remove one of two patches deactivating broken vdso support on mips
+03baedb15d package/kernel: Enable XATTR by default
+088909cc1a e2fsprogs: fix build problem with very old libmagic
+2466fafa89 odhcp6c: Upstep to latest version
+ce54bf6701 kirkwood: add missing kernel symbol
+bd95bc6be6 packages: make virtio-pci actually depend on PCI_SUPPORT
+c21ed6670b kernel: add missing symbol for 4.4
+00a2f59f5f kernel: add missing symbols into 3.18 and 4.1
+5a3b3a10c1 packages: add kernel version dependency for bmp085 module
+8110af7e28 ca-certificages: Add certificate bundle for packages that need it
+dd33f253ba kernel: require admin permissions for swconfig set operations
+94a986d88f kernel: deny swconfig set requests for unprivileged users
+8207cd3298 swconfig: improve failure reporting
+c7789efa7f polarssl: enable AES-GCM and CAMELLIA-GCM ciphersuites
+f0b59b4b85 sparse: update to support llvm 3.5.0
+37a548cd64 strace: add option for enabling stack trace support
+222a02bc6f tools/mkfwimage2: remove 256 length limit for partition images
+dadb001958 kernel: replace SMP cacheflush fix with some patches from linux-mti.git
+7036d553c6 kernel: fix mips MT_SMP kernel crash on cache flush
+979069b75b kernel: add support for uncompressed zImage on ARM
+1394bc75ac kernel: add common config symbols
+89b0e67bae mvebu: Configure status LED for WRT1900ACS
+5e2a11f9b7 mvebu: add a patch to deal with excessive latencies/delays during flash PIO command processing
+afc13094ba mvebu: configure switch on WRT1200AC and WRT1900ACv2/S
+852e45af41 mvebu: backport upstream ethernet driver improvements and enable buffer manager support
+b891669e69 mvebu: fix device I/O coherency issues
+202b2a307c mvebu: correct patch name of the crypto sram fix
+fce36406d4 mvebu: fix bus ranges for the crypto processor sram
+87d7a2f643 mvebu: tune kernel config for performance
+d818da7f77 mvebu: enable core drivers in the kernel config instead of packaging them
+a1f8d57803 mvebu: add some more flash driver fixes
+1c81909560 mvebu: rename recently added flash driver fix
+3259ed3ad2 mvebu: prevent crash in the flash driver in case of a spurious interrupt
+cdd4cf1b24 mvebu: update to linux 4.4
+e227836ddc mvebu: fix portability issues in the image makefile code
+1fe108f79f mvebu: backport an upstream NAND flash driver fix
+40b0a3e25c linux-firmware: fix md5sum
+b84356273b rtl8192su-firmware: move firmware to own package
+cfc7b59c5c rtl8192se-firmware: fix package build
+2a17ff6faa mt76: update to the latest version, fixes a SMPS handling issue
+6f26f48608 mt76: update to latest version, adds survey support for mt76x2
+892caed120 mt76: update to the latest version, fixes a monitor mode injection crash
+b64a4f66e8 kernel: rename B53 symbols to avoid upstream kernel conflict
+84394136ee kernel: backport bgmac changes from net-next
+3259bc24af kernel: rename bgmac patches that went into the same kernel
+0a49be215b packages: fix bmp085-spi typo
+689317c5cc kernel: add missing symbols for 4.4
+217abe87ce packages: add virtio-pci and virtio-mmio packages, fix 9pnet dependencies
+8bdbf41791 kernel: update to version 4.4.14
+fa936d2099 mediatek: convert the NAND target to UBI
+ff159b733c mediatek: remove modules from Kernel config
+5fa16053e3 ramips: fix up switch settings for Sitecom WL-351 v1 002
+64032d56b3 ramips: disable the WP pin on the SDK mmc driver
+b48b0cffc9 ramips: fix pinmux typo
+605dcfba31 ramips: set correct LAN/WAN MAC addresses on DIR-860L B1
+d55cbdcc86 ramips: fix fixseama call on first boot
+14dc8ede0b ramips: add i2s clocks
+78d773a788 ramips: update i2s dtsi files
+73b563e949 ramips: improve i2s drivers
+f915f9b8b4 ramips: add i2c clock
+751212a809 ramips: update i2c dtsi files
+13e25117a3 kernel: refresh patches
+bc966e891d kernel: backport cosmetic ubifs patch
+54a7bbf9d0 sunxi: remove NAMESPACES config symbols
+a014b3912c modules: add BMP085 pressure sensor
+a401213229 tools: build msdostools for omap
+ea069db400 omap: remove NAMESPACES config symbols
+71de101f6d omap: remove XFRM config symbols
+a1e7166ae5 omap: remove config symbol W1
+bbc2aed5f1 omap: switch to 4.4
+83a87cf269 omap: remove BMP085 symbol
+3f486af5d5 kernel/spi: add kernel package for spi-omap-24xx
+a244a11be9 kernel: add random-omap rng for omap
+94c6e7eded zynq: remove unneeded _DIAG and _XFRM symbols
+128f2fff20 sunxi: remove XFRM_ config symbols
+61473c54dd modules: add missing module to ipsec description
+3b0bfeac5c octeon: fix image build
+1cd953840a octeon: export the FILESYSTEMS variable during image generation
+93a03a3dad octeon: Ignore MEM boot param when too small
+59d6be20e2 octeon: convert to new image building code
+17870edd26 cns3xxx: fix RX softIRQ loop
+784bd18690 libnetfilter_queue: fix checksum computation
+39e0bd76b5 mtd: support -c (datasize) option for fixseama command
+80763b33dc kernel: mtdsplit: calculate kernel partition precisely for Seama
+dacbc34e6a firmware-utils: oseama: support extracting entity
+0e4fad39ae oseama: support extracting entity
+0a550a1e01 brcm63xx: simplify block size and image offset options
+44d646e4c5 brcm63xx: add sysupgrade images
+cf61ca6d69 brcm63xx: merge DSL-274X-F1 profiles
+0a0b7425da brcm63xx: move the bootargs into the dtb files
+1f6462e778 brcm63xx: use upstreamed compatible name for the periph intc
+56f7034b80 brcm63xx: fix external IRQs
+543b3bc33a brcm63xx: fix single profile selection
+0c81a3297b brcm63xx: improve image/Makefile
+773476cf7b brcm63xx: fix typo image/Makefile
+fed74f37dd brcm63xx: add initial support for Netgear EVG2000
+22b64744a5 brcm63xx: set DSL-274XB-F1 ath9k LED as active high
+dbcf59f79c brcm63xx: set HG556a A/B ath9k LED as active high
+3b0e46318f brcm63xx: add support for inverting ath9k LED polarity
+35228f63b3 brcm63xx: move profiles definitions to image/Makefile
+f3788b0863 brcm63xx: refresh kernel patches and config
+5cf4ef4d86 brcm63xx: switch to linux 4.4
+b65b434919 brcm63xx: fix F@ST2704V2 image generation
+5e636fc237 bcm53xx: backport BCM5301X patches for SRAB
+7567f6d70d bcm53xx: properly support sysupgrade using Seama on NAND devices
+eab2b26fc4 bcm53xx: use uncompressed zImages
+c3c56f0fc5 bcm53xx: refresh kernel config
+32505e0db8 bcm53xx: refresh kernel config
+20f8925e01 bcm53xx: sysupgrade: move TRX specific code to separated function
+c75a18ae2f bcm53xx: pass datasize to mtd in hexadecimal format
+cc5a0d09ee bcm53xx: fix partition typos in 09_fix_crc
+2d74fcb9c4 bcm53xx: calculate TRX CRC32 using whole kernel partition
+d86876d671 kernel: add missing config symbols for 4.4
+4b5714bfba scripts/ipkg-build: fix deprecated GZIP environment variable warning
+f72b96b11e x86: lift generic x86-32 target
+d62d57ee60 x86: reorganize x86_32 support
+102a719727 x86: use sysfs DMI information to populate sysinfo
+03b3459267 x86: enable DMI and DMI_SYSFS
+a1149f8491 x86: generalize partition discovery for sysupgrade
+502285aff0 x86_64: enable mmc to support booting off sd
+a6e2b265d1 kernel: Build it87 hardware monitor module
+effa5a628b x86/xen_domu: enable xen drivers in the kernel config instead of packaging them as modules
+bd42a4cce1 x86: enable grub at_keyboard support for x86_64
+768e546b34 x86: remove the kvm_guest subtarget
+e8ae2da9ea x86/64: add more hardware RNG drivers, including for virtio
+bb78ff31b4 x86/64: enable virtualization support for spinlocks to improve kvm performance
+64de7165e5 lantiq: Slow down SPI flash on the DGN3500
+f80f387576 lantiq: make EASY80920 work with both chip versions
+4c43960fea lantiq: use new partition layout for EASY80920NAND
+55ae32b88e lantiq: build fullimage.img for EASY80920NAND
+3ce3c1d756 lantiq: remove patch adding support for building without reset controller
+5e9b0633db lantiq: fix typo in new image generation
+4803354e87 lantiq: fix build of NAND sysupgrade images
+459779dbb7 lantiq: ltq-atm: fix xrx200 depends
+25407a7743 lantiq: clean up / fix LegacyDevice template handling
+2ae96f95d0 lantiq: get rid of ifneq() checks inside command templates
+59c662b6ec lantiq: small fix for legacy profile builds
+83f7442dcc lantiq: convert remaining legacy targets to the new image generation code
+e8d29847da Revert "lantiq: Use correct macaddr generating logic for the DGN3500"
+ae35aeb34d lantiq: refresh patches
+ae51a12559 lantiq: the io space was still not big enough for UHCI
+a9e0a04a51 lantiq: add ARV4525PW wifi led
+f513572f05 lantiq: fix VG3503J loader generation
+fba0826f52 lantiq: fix fritz7320 wifi support
+cc5e2100b4 lantiq: fix io_space_limit
+d4054a9766 lantiq: fix ARV452CQW button gpio setup
+f9fc166696 lantiq: add AVM image mageic to sysupgrade script
+1520c5ac95 package/lantiq: make lantiq kernel modules work with xway_legacy
+f99a37fae3 lantiq: add xway_legacy target
+9558c1344b lantiq: gpio-export fails to build if GPIO_SYSFS is not enabled
+6dc517dd7d lantiq: Add Support for Fritz!Box 7360 SL
+d52c978502 lantiq: use new property name for eiu irqs
+9f716901fa lantiq: fix a regression in the eiu irq loading code
+bb7bcc20eb lantiq: add default lan setup to board.d script
+6111da6a43 lantiq: add VLAN handling fixes to xrx200 ethernet driver
+f16de57d4b lantiq: fold 0400-xrx200-net-multi-phy.patch into 0025-NET-MIPS-lantiq-adds-xrx200-net.patch
+9134f3fe16 lantiq: change xrx200 ethernet driver WRED signal to global to fix spurious packet loss issues
+c095c709d7 uboot-envtools: add config for WBMR300 (lantiq)
+fa6730fcf2 lantiq: enable swconfig LED support
+c6a3553eb4 lantiq: add Buffalo WBMR-300HPD support
+13259c833e uboot-lantiq: get rid of bogus profile dependencies
+4663d8deb2 lantiq: fix image DEVICE_DTS handling, add proper default value
+329c3215bb lantiq: only call Image/Prepare/Profile for defined profiles
+bc04f97963 lantiq: un-macro the image building code
+f002934064 lantiq/image: move tplink specific image into own file
+46691b805d lantiq: unmacro tp-link boards
+e8b6bd2155 lantiq: do not build images which exceed the flash size
+0a9f38aafc uboot-lantiq: vrx200 - lzma compress gphy firmware
+f628119081 uboot-lantiq: vrx200 - add support for dual nor flash
+fb96e64ecd uboot-lantiq: VGV7510KW22 - cleanup board config
+55b7ffb6c0 lantiq: fix regression in VG3503J.dts
+b1f6c1e55a lantiq: VG3503J - use the 11G firmware
+ea6f139740 lantiq: VG3503J - merge profiles
+add9b508c0 lantiq: enable SMP for XRX200
+969e527bbe lantiq: Reduce ugliness of ugly hack
+82cca2e530 lantiq: refresh xrx200 kernel config
+393ef18a1d lantiq: remove dummy ltq_machine_power_off to fix gpio-poweroff drivers
+4554995c4d lantiq: fix segfault inside ltq-adsl-app
+41a12f9612 lantiq: Fix macaddr-setting code on DGN3500 and possibly other devices
+edb6897598 lantiq: Use correct macaddr generating logic for the DGN3500
+c18cbbde4f lantiq: Use the correct SPI flash speed for the Netgear DGN3500
+50f36b2c4b lantiq: VGV7510KW22 - enable the IP101A phy
+e7fd5962d8 lantiq: VGV7510KW22 - fix pinmux configuration
+1e9b6904a8 uboot-lantiq: Add Arcadyan VGV7519 support
+1ea639b8d0 lantiq: VGV7519 update bomb
+f2b0bc17b2 lantiq: fix ARV4518PWR01 network
+e71983fca5 uboot-lantiq: ARV752DPW - use correct switch driver
+e496316324 uboot-lantiq: VGV7510KW22 - use ddr ram params from brnboot
+2b3bd24865 lantiq: disable phy led complex (test) functions by default
+2d69405047 lantiq: move ubi/ubifs options to the image makefile
+20751d1f62 hostapd: fix breakage with non-nl80211 drivers
+2fab872ba6 hostapd: fix compilation error in wext backend
+6393b9007a hostapd: implement fallback for incomplete survey data
+85e8cd3593 hostapd: update to version 2016-06-15
+cd7ae753de hostapd: Update to version 2016-05-05
+a6920cf21e e2fsprogs: Bump to v1.43.1
+6d23a930b4 tools: e2fsprogs: bump to 1.43.1
+5f838bf1f8 ar71xx: hiwifi-hc6361: lift size limit on kernel and rootfs parts
+dafbd7fdb8 tools/firmware-utils: Add Archer C50 to mktplinkfw2
+e1038d39bd ramips: add suport for ZBT APE522II
+6163bef2dd ramips: remove duplicate i2c dts info
+430f86eff1 ramips: update i2c drivers
+140099a4e6 ramips: fix kmod-sound-mt7620 packaging
+6c67d1c081 ramips/image: Add Archer C50 to mt7620 Makefile
+850993467c ramips/base-files: Add support for Archer C50
+580b518fae ramips/dts: Add support for Archer C50
+59ce620757 ramips: add support for DuZun DM06
+621cbbc163 ramips: enable wm8960 kernel menuconfig select option
+963cf40f88 ramips: add gdma hsdma dts info
+89c6496915 ramips: enhance dma engine support
+7ec8f901a6 ramips: fix Netgear EX2700 images
+2f3df65a63 ramips: add kmod-pwm-mediatek for mt7628/mt7688
+58648bec39 ramips: fix the number of uarts for each SoC
+e3c841de2c ramips: fix Mi Wi-Fi Nano Wireless LED pinmux
+0e99115485 ramips: add Widora-NEO board support
+3dd66d0eec ramips: fix Netgear EX2700 images
+a7ccb5a1b3 ramips: fix Netgear EX2700 images
+e50af47fcd ramips: add backported MT7628 pinmux fixes
+f46657208c ramips: Add status led for Xiaomi MiWiFi Nano
+05daba8e2e ramips: fix timing issues when using MT7621 spi
+fa132c2a36 ramips: Add specific compatible properties for esw
+cae16a2a6f ramips: cleanup for Hame MPR-A2
+c3e13e30a2 ramips: use green power LED as status indicator for Buffalo WSR-1166 and WSR-600
+943fd551f8 ramips: remove fake vlan rx offload from ethernet driver
+4d42b15003 ramips: fix pinctrl regression
+8311c3838a ramips: fix spidev generic nodes
+93da3f4281 ramips: fix size-cells on spi nodes
+77da98d12f ramips: fix 8M WT3020 image creation
+39fa05183a ramips: fix ArcherC20i image creation - 3rd try
+0fe90e5536 ramips: fix Archer C20i image build
+3754b740d8 ramips: set default profile to priority 1
+decf892a71 ramips: fix ArcherC20i image creation
+64002d6925 ramips/mt7621: remove cflags override
+82bf6bf05f ramips: disable unused ethernet ports on VoCore
+6ca6a709c2 ramips: fix indentation of Build/* template commands
+fb62f314ca ramips: add wmac nodes to all mt7628/88 dts files
+84cfcafd6c ramips: add status led for ZBT-WE826
+15458e85bc ramips: convert a bunch of targets to new image building code
+51a5c32295 target: globally remove ARCH_PACKAGES overrides
+2bf6b1e78a ramips: DTS modifications
+3059f411b4 ramips: add initial support for SamKnows SK-WB8
+2d3542e1c9 ramips: DTS rework
+7df842e2d1 scripts: add dirtyhack to getver.sh
+f82831818b fw-utils/tplink-safeloader.c: Add support for Archer C2600
+4bba860ab8 include/image.mk: move build step tplink-safeloader to image.mk
+346dd73560 ipq806x: bump to 4.4
+7468909bd2 scripts/getver.sh: generate revision relative to the trunk tag.
+527aa5f3b2 ipq806x: enable ieee80211 phy hotplug and patch macaddress
+cfe551285f ipq806x: Fix typo in Qualcomm device names
+b5245ba456 ipq806x: add initial support for Netgear R7800
+b853573993 ipq806x: move ath10k firmware selection into device profiles
+4ffe9d30b5 ipq806x: move smb208 nodes into a regulator subnode
+271820d4cd ipq806x: fix MAC_POWER_SEL switch configuration
+cdb3053a3a ipq806x: activate ATAG DTB mangle and EA8500 rootblock in dts
+422c5fb53e ipq806x: add missing kernel config symbol
+6c6c1e852e ipq806x: restore old stmmac dma patch which is still needed to fix data corruption
+8791bebf95 ipq806x: move dts file to the files folder
+476853a27d ipq806x: base-files: add support for Linksys EA8500
+56319a0e3c ipq806x: build Linksys EA8500 images
+880fddf86b ipq806x: update bomb
+993ba6b109 ipq806x: enable fpu
+6c5cec4e46 realview: sync kernel config file, update to 4.4
+049490fc53 oxnas: install kernel binaries into bin/ for use with external storage
+e2fab81661 oxnas: remove unneeded _DIAG symbols
+c6c0c05c43 oxnas: sync 010-arm_introduce-dma-fiq-irq-broadcast with cns3xxx
+5fdc19893e oxnas: move target-specific modules into target's modules.mk
+d22dcaa691 oxnas: reorganize image build code and nuke profiles
+441a9c879b ixp4xx: fix Avila SoC audio driver compilation
+5ce87f5de3 ixp4xx: Add support for 4.4 kernel, refresh patches
+07796c512f ath25: drop target specific button hotplug
+fe52bf43d8 brcm2708: update bomb
+8342e1f663 brcm2708: removes backported patch (linux-4.4.7)
+14bcd15fc5 kernel: remove a hack that was obsoleted upstream
+3b71a8996a kernel: update kernel 4.4 to version 4.4.13
+660ec23512 kernel: add workaround to rebuild vdso-n32.so.dbg too
+c87080ee05 ath25: update kernel from 3.18 to 4.4
+6d853e81c8 mac80211: remove unneeded patch with updated mac80211
+7a0f0eb1c7 mac80211: add missing config symbols to PKG_CONFIG_DEPENDS
+b3d5688efc mac80211: fix unaligned accesses in the tx path
+4b13ab4241 mac80211: fix a module build/dependency issue that was breaking lib80211
+080fabb5c7 add plan 9 fs support
+22846a6072 iw: refresh patches
+44713c22f8 mac80211: update to wireless-testing 2016-05-12
+35bfff92f8 mt76: fix rebuild on CONFIG_PACKAGE_MAC80211_MESH changes
+a807c0e9bd mt76: update to the latest version
+8a2689d533 global: introduce ALL_NONSHARED symbol
+61d1d288b9 brcm2708: properly detect the Raspberry Pi Zero
+165abaf3bc brcm2708: update linux 4.4 patches to latest version
+1c225aa2bf brcm2708-gpu-fw: update to latest version, backport changes
+b6baab7f56 brcm2708: fix build error introduced with SUBTARGET checks
+9cc73342cd bcm2708: explicitly check for SUBTARGET instead of using the device SUBTARGETS variable
+ee36cbc6b2 kernel/mac80211: skip ath10k OTP check if caldata found
+25cee375fb ath10k-ct: Update to latest 10.4.3 CT firmware for 9980 chipsets.
+f11db7026a ath10k-firmware: add QCA9984 firmware
+870864d628 ar71xx: WDR4300: Fixed default VLAN order
+51d20b495f ar71xx: mach-ubnt-xm.c convert patches to mach file
+fca52fb7f3 ar71xx: enable flow control for ethernet MACs with built-in switch
+bebdc8766a ar71xx: add support for OpenEmbed SOM9331
+1d3853d41f ar71xx: convert OM2P to device profile
+4d67ebf8c5 ar71xx: enable profile sorting in preparation for adding device profiles
+ab69c109ab ar71xx: add WRTnode2Q support
+05300082b5 ath10k: support CT firmware choices.
+299c437ccd ar71xx: update bomb
+906ce8b22a package: ath10k-firmware: fix board-2.bin download URL
+59619ccbd3 usbutils: Use github alias
+429456e441 mdns: update to latest git HEAD
+0e84de39c3 kernel: fix unaligned access issue in the bridge multicast-to-unicast patch
+1fdc2c21c3 ar71xx: fix a remaining unaligned access issue
+9cb35e0499 ar71xx/cpe510: enable LNA for CPE210/220/510/520
+0a1b163954 libusb: disable parallel building
+3a625865a1 kernel: fix a compiler warning on 64 bit systems
+258941a61e target.mk: add cflags for mips 1004kc cpu type
+a194e83f16 brcm2708: convert to the new building system
+e95f2e2f72 busybox: fix issues with the ip command on mips64
+e5cbcbe736 package: flag further target specific packages as nonshared
+557ecbebe7 package: mark nvram and otrx nonshared as they're target specific
+6943b86e60 at91: fix SAMA5D3 subtarget
+fca949b897 openvpn: update to 2.3.11
+bb5a6118b8 openvpn: add support for tls-version-min
+d6255e751e openvpn: remove unrecognized option
+a115fe6629 iperf: Drop single-threaded variant
+9a0c2f5bc3 iperf: Upgrade to version 2.0.8
+295a2e6ec6 cyassl/wolfssl: fix commit
+8adfc58718 cyassl/wolfssl: update to 3.9.0
+6f91f30f9f tools/cmake: bump to 3.5.2
+31f176f567 nettle: update to 3.2
+1383e6058d dnsmasq: update to dnsmasq v2.76
+3b251c9783 kernel: add missing symbol
+1e284e87c9 curl: update to 7.49
+1d31c0d633 mediatek: drop some mail changes as they don't apply cleanly
+aad6cb767f kernel: add back the macronix software protection disable patch
+ce1cb93b20 linux/generic: add missing config symbols
+9d81678ab0 kernel: update kernel 4.4 to version 4.4.12
+2dc1e11c68 As usual these patches were extracted from the raspberry pi repo: https://github.com/raspberrypi/linux/tree/rpi-4.4.y
+14cd93c1ec ramips: use backported upstream patches
+c42275ffcb mediatek: more nand fixes
+8d85621b86 mediatek: more mtd fixes
+bec4227577 mediatek: update mtd backport
+97f10c21d2 mediatek: update patches
+2f4fbf7a56 ar71xx: update to linux 4.4
+8361769e4c kernel: update kernel 4.4 to version 4.4.11
+0d2e17d445 brcm2708: rename patch
+e2b1e76090 kernel: backport patches improving fq_codel drop behavior
+ebda33f564 kernel: remove out-of-tree patches for reducing qdisc truesize
+a4ac32b1db kernel: fq_codel match flows_cnt to limit sizing
+ee57ff57f1 kernel: fold codel default fix into main patch
+d354aaa58d ar71xx: Add support for Ubiquiti UniFi AP AC PRO
+58d97c7733 ar71xx: Rename unifiac to unifiac-lite
+49ffc6be5b ar71xx: fix register address calculation for DDR flushing
+aba231a293 ar71xx: fix typo in pci memory window initialization fix
+68534834cc kernel: fix yaffs2 build with kernel 4.4
+68cf2690a0 ar71xx: typo in jjplus profile
+53244ed84b ar71xx: register the gpio driver earlier
+14decebc0f ar71xx: fix a PCI initialization issue in Linux 4.4
+b9cde0722a ar71xx: fix DDR write buffer flushing issues with 4.4
+d42ccc9f28 ar71xx: add support for TP-LINK TL-WR842N/ND v3
+1817b15e04 ar71xx: add proper support for Archer-C7 V2
+dab952f573 kernel: add missing config symbol
+8510ac1152 e2fsprogs: update to 1.42.13
+ab8c13df13 ar71xx: Fix TP-LINK Archer-C5/C7 v2 rfkill
+d20326f240 fstools: update to latest git revision
+ad04fcb11c dropbear: update to 2016.73
+444a62b67b toolchain/gdb: Use correct folder name for ARC patches
+b4d8d652a3 package/devel/gdb-arc: Add target GDB for ARC
+49a74031a1 arc: Build uImage as well as vmlinux output files
+d44ce810e4 toolchain: Bump ARC tools to arc-2016.03
+870678baa7 target: socfpga: Add support for QSPI NOR boot
+8864b97350 package: kernel: dtc: Add DTO support
+96aff9c986 package: kernel: dtc: Add device tree compiler package
+730caf6eb9 Update the U-Boot package to upstream 2016.05 version. This version improves overall performance of the platform, since it fixes cache problems that prevented the cache from operating fully in previous releases.
+438cf654cb kernel: update kernel 4.4 to version 4.4.10
+27b55520a4 kernel: update kernel 4.4 to version 4.4.9
+4208ce821a kernel: update kernel 4.4 to version 4.4.8
+602bafecdb brcm2708: update to latest version
+917c0ff333 rpcd: update to latest version with iwinfo fix
+d7863315dd iw: backport support for "channels" command
+1103559e53 mac80211: brcmfmac: backport changes from 2016-06-16
+99cd168573 mac80211: brcmfmac: fix support for BCM4366
+39af6a3f3e mac80211: brcmfmac: add support for get_channel
+20c515d82a mac80211: brcmfmac: fix support for up to 4 AP interfaces
+b98da4b623 mac80211: brcmfmac: backport fixes for 4.7 and 4.8
+5f8010ad9b treewide: fix replace nbd@openwrt.org with nbd@nbd.name
+a807b458a8 bcm53xx: drop Copyright header from two of my bash scripts
+e53059a8dc base-files: fix permissions of the login.sh script
+d82186f7bf include: drop unused kernel 4.3 versions
+3907a8c0b2 kernel: remove linux 4.3 config
+88d875f604 Revert "ncurses: package the tinfo library separately"
+bdc885709e mtd: imagetag: fix compilation with changed mtd_fixtrx call
+aa16759d3d krikwood: Make Iconnect image use new ubi format style
+657b605b3d kirkwood: Migrate Iconnect to new ubi image format
+e62f65223f uboot-kirkwood: New ubi flash format for Iconnect
+9ccd1da444 target: socfpga: Add Altera SoCFPGA support
+c3d9ae93fd package: kernel: Enable support for DWC2 USB on SoCFPGA
+8cdb6e0df9 package: kernel: modules: Add USB Mass Storage package
+546a55d2ca package: kernel: modules: Enable Dual-Role support for DWC2 USB
+93c4489fa2 gettext-full: avoid spurious dependencies on ncurses
+c9f9d0e3ad ncurses: package the tinfo library separately
+151b870847 ramips: fix DTB generation
+2ca92c41fe iftop: Update to latest version, and drop patch
+9315990718 ncurses: provide libncurses compatibility symlinks in libncursesw
+5b3f700399 ramips: Change all '/include/' clauses to '#include' so preprocessing can be done properly for the entire device trees.
+f108f4ef24 ramips: Add hex prefix (0x) to dtsi reg properties where needed.
+6950b97666 ramips: introduce serial0 aliases
+aeccfb0f63 ubox: make logging code honour the hostname properly
+8248da4d74 brcm47xx: fix wgt634u port assignment, broken since openwrt r47866
+391b50e4bc ramips: mt7620: [UPSTREAM] fix USB frequency scaling
+21e9ab7e0d ramips: Fix alphabetical sorting for 02_network
+638a058c12 ramips: Don't use a VLAN for the single ethernet port of the A5-V11.
+ac17992f9c ramips: Fix network for routers without VLANs on eth0.
+6bfbf28369 ncurses: install pkg-config files to fix util-linux build breakage
+949d8ed779 ncurses: remove libncurses, provide it via libncursesw
+78308aadbc metadata.pl: add support for selecting packages available only via PROVIDES
+f433a43aac kernel: add workaround to rebuild vdso-o32.so.dbg
+a5759c23f3 toolchain: gcc: fix build with GCC 6
+1789e4cde0 tools: mkimage: sync include/linux/compiler*.h with u-boot master
+260814a86a tools: pkg-config: fix build with GCC 6
+7dc72ab84f tools: make-ext4fs: fix build regression on mac os x
+535a2648b2 base-files: evaluate uci-defaults on run-time installations
+32de2e4468 libiconv: add all ASCII aliases
+ab0a61efa2 xtables-addons: Avoid redefinition of SHRT_MAX in lua packet script
+8d4d609a51 fstools: fix snapshot support
+d6b90a3a33 fstools: update to latest git HEAD
+90eed29f03 fstools: update to latest git HEAD
+ef3113b1ef kernel: add a workaround to rebuild vdso.so.dbg after genvdso
+18984188e8 dropbear: Make utmp and putuline support configurable via seperate config options
+6ef5c78c0f netifd: Add configurable DHCP release behavior
+ff4f769d20 xtables-addons: Fix Lua packet script implementation
+091c856d04 lantiq: fix xway image building
+cc0d85b1b6 x86: remove old references to kmod-acpi-button
+66ffd4817b kernel: fix ip6_tunnel compilation
+66e6517d65 base-files: remove ununsed login.sh
+bfdaaaa54f base-files: Allow to disable failsafe mode
+0cb07cebed image / basefiles: make console password configurable
+1c93c65a36 base-files: fix error message during boot
+7036eb32e7 scripts: metadata: add CONFIG_TARGET_SUBTARGET symbol
+7553c7eec0 busybox: fix setting the kernel timezone
+bb1778b720 netifd: Send DHCP release when client exits
+691f44e0dd netifd: fix default ip rules
+cb7d4e0276 x86: search PARTUUID in any block device
+90d61fead4 x86: make sysupgrade work without partx
+e894664b49 mtd: add -c option for specifying amount of data to be used for checksum
+5a5787d877 mtd: trx: use separated buffer for TRX header
+0af265171b mtd: seama: exit with error if Seama header wasn't found
+23edb8ebe7 mtd: seama: fix image data handling
+ff752836fe mtd: seama: move buf allocation to the MD5 function
+a3546435e5 mtd: seama: update MD5 using header in the first block buffer
+49ec819bea mtd: seama: add md5 to header struct
+4cf77698d6 mtd: check for Seama magic early when fixing MD5
+db62181a7d mtd: add missing breaks in a switch
+05a7b18c2e mtd: use tabs for indents
+4d74bf39ae kernel: update kernel 4.1 to version 4.1.23
+dbd05b0320 openssl: Update to version 1.0.2h
+4d5daf0ef3 ramips: Drop hacky switch workaround for failsafe on rt3x5x and rt5350.
+f238f71af1 ramips: Disable all ethernet ports except port 0 on A5-V11.
+0a2bd2abcf ramips: Disable all ethernet ports except port 4 on HT-TM02.
+d24cb6bdfb ramips: Get rt3050 ethernet ports to be disabled from the device tree.
+bd083bb79f ramips: Fix comment in rt3050 ethernet switch driver.
+92659d1c8e ramips: Fix documentation for the rt3050 switch driver.
+63da243b1c ramips: Fix multicast ICMPv6 for the rt3050 ethernet switch.
+9b6296a968 ar71xx: add TP-Link TL-WR810N support
+96f0ff7c93 ubox: turn logd into a separate package
+2e3c748d8a lantiq: VGV7510KW22BRN - set the phy clock source
+f9151d154f lantiq: add device tree binding for the phy clock source
+989f7773a6 lantiq: VGV7510KW22BRN - support dual-image
+b55c724fd6 lantiq: handle the dual-firmware layout of brnboot
+2b17907b3e lantiq: move partitions into partion table node
+1a9580c499 lantiq: use sysupgrade.bin postfix for tplink images
+a7ea2c9f5c lantiq: VG3503J - use the same PHY led functionality as the OEM firmware
+7617b38904 ar71xx: Fix eth0 support for Ubiquiti UniFi AP AC
+6a99326b9e base-files: fix group/user settings after sysupgrade
+899f8d5c56 base-files: split user/group addition code into a function
+f9a0e8448a ppp: Add ppp-mod-passwordfd subpackage to ppp
+e7c877c7fc dnsmasq: Add conntrack support in the full variant
+243887c478 dropbear: Add procd interface triggers when interface config is specified
+98a9b0d65f iproute2: Add package for nstat utility
+1be7626349 lantiq: use the same functionality for all ethernet phys led
+ec1c4a4ce0 lantiq: fix minor typos in 11G/22F phy driver
+51bb512b67 ramips: add support for Planex MZK-EX750NP.
+9241c0dd55 scripts: avoid hard-coded paths in scripts
+ca78fd16b5 base-files: evaluate uci-defaults on run-time installations
+5913038af1 mediatek: sync patches and add more ethernet stability fixes
+bdbe2c8a7a bcm53xx: add m25p80 workaround for SPI flash writing problems
+1e22c9b9eb mediatek: sync and patches add support for several boards
+cafe040bdd bcm53xx: support SPI-NOR on dual flash devices
+7092a08d77 bcm53xx: switch to m25p80 and drop bcm53xxspiflash
+933b47bd5c bcm53xx: support JEDEC incompatible w25q128 in spi-nor
